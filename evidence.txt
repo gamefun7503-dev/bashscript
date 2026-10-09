@@ -1,0 +1,12 @@
+downloads (1).log:20:2026-11-27T23:52:00Z event=DOWNLOAD_COMPLETE user=jblake host=DIST-04 session=D771 asset=DOOMSDAY_FINAL_MASTER_4K.mov asset_id=A0042 bytes=47800000000 sha256=4ef14d30e2e82bc49d32965faf21885034f3db7c48ef6340a07713d57c81d4f1
+downloads.log:250:2026-11-27T23:52:00Z event=DOWNLOAD_COMPLETE user=jblake host=DIST-04 session=D771 asset=DOOMSDAY_FINAL_MASTER_4K.mov asset_id=A0042 bytes=47800000000 sha256=4ef14d30e2e82bc49d32965faf21885034f3db7c48ef6340a07713d57c81d4f1
+file_access (2).log:20:2026-11-27T23:49:00Z event=READ user=jblake host=DIST-04 session=D771 asset=DOOMSDAY_FINAL_MASTER_4K.mov asset_id=A0042
+file_access.log:250:2026-11-27T23:49:00Z event=READ user=jblake host=DIST-04 session=D771 asset=DOOMSDAY_FINAL_MASTER_4K.mov asset_id=A0042
+login (5).log:20:2026-11-27T23:46:00Z event=LOGIN_SUCCESS user=jblake host=DIST-04 session=D771 mfa=OK
+login.log:250:2026-11-27T23:46:00Z event=LOGIN_SUCCESS user=jblake host=DIST-04 session=D771 mfa=OK
+network (3).log:20:2026-11-27T23:58:00Z event=UPLOAD_COMPLETE user=jblake host=DIST-04 session=D771 destination=screen-vault.example dst_ip=203.0.113.77 asset_id=A0042 bytes=47800000000 sha256=4ef14d30e2e82bc49d32965faf21885034f3db7c48ef6340a07713d57c81d4f1 transfer=X901
+network.log:250:2026-11-27T23:58:00Z event=UPLOAD_COMPLETE user=jblake host=DIST-04 session=D771 destination=screen-vault.example dst_ip=203.0.113.77 asset_id=A0042 bytes=47800000000 sha256=4ef14d30e2e82bc49d32965faf21885034f3db7c48ef6340a07713d57c81d4f1 transfer=X901
+security (6).log:18:2026-11-27T23:58:01Z event=ALERT rule=UNAPPROVED_DESTINATION session=D771 transfer=X901 destination=screen-vault.example action=monitor_only
+security (6).log:20:2026-11-27T23:59:30Z event=TICKET_AUDIT session=D771 transfer=X901 approved_external_transfer_ticket=NONE
+security.log:248:2026-11-27T23:58:01Z event=ALERT rule=UNAPPROVED_DESTINATION session=D771 transfer=X901 destination=screen-vault.example action=monitor_only
+security.log:250:2026-11-27T23:59:30Z event=TICKET_AUDIT session=D771 transfer=X901 approved_external_transfer_ticket=NONE

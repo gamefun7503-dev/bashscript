@@ -10,14 +10,19 @@ LOG_FILES=("login.log" "file_access.log" "downloads.log" "usb_activity.log" "net
 # TODO: Use a for loop to select each filename.
 for file in "${LOG_FILES[@]}"
 do
+    echo 
     echo ==========================
     echo ==========================
     echo "EVIDENCE FILE: $file" 
     echo ==========================
     echo ==========================
+    echo 
     while IFS= read -r line
 do 
-    echo "$line"
+    if [[ "$line" == *"ALERT"* ]]
+    then
+        echo "FLAG: $line"
+    fi 
 done < "$LOG_DIR/$LOG_FILES"
 done 
 # TOD0isplay the current filename.
